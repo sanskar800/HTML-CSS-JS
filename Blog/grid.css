@@ -1,0 +1,233 @@
+.nav-bar {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h2 {
+  font-size: 24px;
+  margin: 0;
+  font-family: Arial;
+}
+
+.span {
+  color: #e63946;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  width: 300px;
+}
+
+.search-button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  background-color: #e63946;
+  color: white;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button i {
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #333;
+  display: inline-block;
+  transition: color 0.3s, transform 0.15s;
+}
+
+.nav-links a:hover {
+  color: #e63946;
+  transform: scale(1.1);
+}
+
+.login {
+  grid-column: 4;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 60%;
+  justify-self: end;
+}
+
+.login:hover {
+  background-color: #555;
+}
+
+.login:active {
+  opacity: 0.6;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-row: auto auto;
+  height: 88vh;
+}
+
+.sidebar {
+  background-color: #f8f8f8;
+  padding: 9px 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  padding: 5px;
+  color: rgb(96, 96, 96);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar li {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar i {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.sidebar a:hover {
+  color: #e63946;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  text-align: center;
+  background-image: url("./samsung.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* width: 88%; */
+  height: 88%;
+  background-image: url("./samsung.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.main h1 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.main p {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 10px 0;
+  padding: 0 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.main button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background-color: #e63946;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 20px;
+}
+
+.main button:hover {
+  background-color: #cc3232;
+  transform: scale(1.05);
+}
